@@ -46,3 +46,13 @@ for (const image of images) {
         // image.setAttribute('style', 'transform: scale(1);');
     });
 }
+// 9
+const subscribe = document.getElementById('subscribe');
+subscribe.addEventListener('dblclick', function () {
+    subscribe.style.backgroundColor = 'tomato';
+    subscribe.style.color = '#fff';
+});
+document.getElementById('subscribe').addEventListener('click', function () {
+    subscribe.style.backgroundColor = 'lightpink';
+    subscribe.style.color = '#000';
+});
