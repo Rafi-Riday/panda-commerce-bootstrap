@@ -35,3 +35,14 @@ document.getElementById('email').addEventListener('keyup', function (event) {
     }
 });
 // 8
+const images = document.querySelectorAll('img');
+for (const image of images) {
+    image.addEventListener('mouseenter', function (event) {
+        image.style.transform = 'scale(1.1)';
+        // image.setAttribute('style', 'transform: scale(1.1);');
+    });
+    image.addEventListener('mouseleave', function (event) {
+        image.style.transform = 'scale(1)';
+        // image.setAttribute('style', 'transform: scale(1);');
+    });
+}
