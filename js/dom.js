@@ -2,7 +2,7 @@
 // 2
 const h2Tags = document.getElementsByTagName('h2');
 for (const h2Tag of h2Tags) {
-    h2Tag.style.color = 'lightblue';
+    h2Tag.style.color = '#047091';
 }
 // 3
 document.getElementById('backpack').style.backgroundColor = 'tomato';
@@ -26,3 +26,12 @@ for (const buyNow of buyNowAll) {
     });
 }
 // 7
+document.getElementById('email').addEventListener('keyup', function (event) {
+    if (event.target.value === 'email') {
+        document.getElementById('email-submit').removeAttribute('disabled');
+    }
+    else {
+        document.getElementById('email-submit').setAttribute('disabled', true);
+    }
+});
+// 8
