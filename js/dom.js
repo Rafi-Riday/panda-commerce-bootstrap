@@ -56,4 +56,4 @@ document.getElementById('subscribe').addEventListener('click', function () {
     subscribe.style.backgroundColor = 'lightpink';
     subscribe.style.color = '#000';
 });
-// challange finished
+// challange finished :)
